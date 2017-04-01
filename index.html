@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Merfy</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <div class="selector">
+          <button id="dough" class="btn btn-info">Dough</button>
+          <button id="sauces" class="btn btn-info">sauces</button>
+          <button id="veggies" class="btn btn-info">veggies</button>
+          <button id="meats" class="btn btn-info">meats</button>
+          <button id="cheese" class="btn btn-info">cheese</button>
+        </div>
+          <div id="pizza-toppings">
+            <br>
+            <div class="dough">
+              <div class="row">
+                <div class="col-md-4" id="1">
+                  <h3>Classic Dough</h3>
+                  <button id="Dough-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="Dough-btn-hold-text-1-1">Select</span></button>
+                </div>
+                <div class="col-md-4">
+                  <h3>Whole Grain Dough</h3>
+                  <button id="Dough-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="Dough-btn-hold-text-1-2">Select</span></button>
+                </div>
+                <div class="col-md-4">
+                  <h3>Gluten Free Dough</h3>
+                  <button id="Dough-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="Dough-btn-hold-text-1-3">Select</span></button>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="sauces">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>BBQ Sauce</h3>
+                  <button id="sauces-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-1-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Chipotle BBQ Sauce</h3>
+                  <button id="sauces-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-1-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Brushetta Sauce</h3>
+                  <button id="sauces-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-1-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Creamy Garlic Sauce</h3>
+                  <button id="sauces-topping-hold-1-4" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-1-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Italian Tomato Sauce</h3>
+                  <button id="sauces-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-2-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Hot Sauce</h3>
+                  <button id="sauces-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-2-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Pesto Sauce</h3>
+                  <button id="sauces-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-2-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Sweet Chili Sauce</h3>
+                  <button id="sauces-topping-hold-1-4" class="btn btn-info btn-lg btn-block"><span id="sauces-btn-hold-text-2-4">Select</span></button>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="veggies">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Caramelized Onions</h3>
+                  <button id="veggie-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-1-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Roma Tomatoes</h3>
+                  <button id="veggie-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-1-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Red Onions</h3>
+                  <button id="veggie-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-1-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Spinach</h3>
+                  <button id="veggie-topping-hold-1-4" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-1-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Broccoli</h3>
+                  <button id="veggie-topping-hold-2-1" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-2-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Pineapple</h3>
+                  <button id="veggie-topping-hold-2-2" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-2-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Jalapeno Peppers</h3>
+                  <button id="veggie-topping-hold-2-3" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-2-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Kalamata Olives</h3>
+                  <button id="veggie-topping-hold-2-4" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-2-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Fresh Mushrooms</h3>
+                  <button id="veggie-topping-hold-3-1" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-3-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Green Olives</h3>
+                  <button id="veggie-topping-hold-3-2" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-3-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Green Peppers</h3>
+                  <button id="veggie-topping-hold-3-3" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-3-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Roasted Garlic</h3>
+                  <button id="veggie-topping-hold-3-4" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-3-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Hot Banana Peppers</h3>
+                  <button id="veggie-topping-hold-4-1" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-4-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Roasted Red Peppers</h3>
+                  <button id="veggie-topping-hold-4-2" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-4-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Sun Dried Tomatoes</h3>
+                  <button id="veggie-topping-hold-4-3" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-4-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Grilled Zucchini</h3>
+                  <button id="veggie-topping-hold-4-4" class="btn btn-info btn-lg btn-block"><span id="veggie-btn-hold-text-4-4">Select</span></button>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="meats">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Anchovies</h3>
+                  <button id="meats-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-1-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Bacon Crumble</h3>
+                  <button id="meats-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-1-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Italian Ham</h3>
+                  <button id="meats-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-1-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Bacon Strips</h3>
+                  <button id="meats-topping-hold-1-4" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-1-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Chicken</h3>
+                  <button id="meats-topping-hold-2-1" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-2-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Ground Beef</h3>
+                  <button id="meats-topping-hold-2-2" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-2-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Spicy italian Sausage</h3>
+                  <button id="meats-topping-hold-2-3" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-2-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Steak Strips</h3>
+                  <button id="meats-topping-hold-2-4" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-2-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>BBQ Steak Strips</h3>
+                  <button id="meats-topping-hold-3-1" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-3-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Pepperoni (NY Style)</h3>
+                  <button id="meats-topping-hold-3-2" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-3-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Pepperoni (original)</h3>
+                  <button id="meats-topping-hold-3-3" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-3-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Chorizo Sausage</h3>
+                  <button id="meats-topping-hold-3-4" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-3-4">Select</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Salami</h3>
+                  <button id="meats-topping-hold-4-1" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-4-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Chipotle Steak</h3>
+                  <button id="meats-topping-hold-4-2" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-4-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Chipotle Chicken</h3>
+                  <button id="meats-topping-hold-4-3" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-4-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Capicollo</h3>
+                  <button id="meats-topping-hold-4-4" class="btn btn-info btn-lg btn-block"><span id="meat-btn-hold-text-4-4">Select</span></button>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="cheese">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Feata Cheese</h3>
+                  <button id="Cheese-topping-hold-1-1" class="btn btn-info btn-lg btn-block"><span id="Cheese-btn-hold-text-1-1">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Parmesan</h3>
+                  <button id="Cheese-topping-hold-1-2" class="btn btn-info btn-lg btn-block"><span id="Cheese-btn-hold-text-1-2">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Goat Cheese</h3>
+                  <button id="Cheese-topping-hold-1-3" class="btn btn-info btn-lg btn-block"><span id="Cheese-btn-hold-text-1-3">Select</span></button>
+                </div>
+                <div class="col-md-3">
+                  <h3>Mozzarlla</h3>
+                  <button id="Cheese-topping-hold-1-4" class="btn btn-info btn-lg btn-block"><span id="Cheese-btn-hold-text-1-4">Select</span></button>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="size">
+            <h2>Size of Pizza?</h2>
+            <button id="small" name="6" class="btn btn-info btn-sm btn-block">Small</button>
+            <button id="medium" name="8" class="btn btn-info btn-block">Medium</button>
+            <button id="larg" name="10" class="btn btn-info btn-lg btn-block">Larg</button>
+          </div>
+        <button class="btn btn-info btn-block" id='submit'>Place your order!</button>
+      </form>
+      <div class="output">
+        <p>Your order has ben placed! Dilivery to your table in 15 min. Here is what you ordered.
+          <ul>
+            <li>Your Dough is: <span id="output-dough"></span></li>
+            <li>Your Sauce: <span id="output-sauce"></span></li>
+            <li>Your Veggies are: <span id="output-veggies"></span></li>
+            <li>Your Meat: <span id="output-meat"></span></li>
+            <li>Your Cheese: <span id="output-cheese"></span></li>
+            <li>Your Pizza size is: <span id="output-size"></span></li>
+            <li>Your bill is: <span id="output-cost"></span></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

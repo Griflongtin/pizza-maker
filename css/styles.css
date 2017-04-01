@@ -1,0 +1,27 @@
+.row, .col-md-3 {
+  border: solid 1px black;
+}
+
+.dough {
+  display: none;
+}
+
+.sauces {
+  display: none;
+}
+
+.veggies {
+  display: none;
+}
+
+.meats {
+  display: none;
+}
+
+.cheese {
+  display: none;
+}
+
+.output {
+  display: none;
+}
