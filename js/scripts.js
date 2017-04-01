@@ -39,41 +39,20 @@ $(function() {
   pizza1.cost = 0;
   pizza1.size = "";
 
-  $('button#dough').click(function(event) {
+  $('#makePizza').click(function(event) {
     event.preventDefault();
+    $('form').show();
     $('.dough').show();
-    $('button#sauces').show();
-    $('button#veggies').show();
-    $('button#meats').show();
-    $('button#cheese').show();
-    $('button#dough').hide();
-    $('.sauces').hide();
-    $('.veggies').hide();
-    $('.meats').hide();
-    $('.cheese').hide();
+    $('.make-pizza').hide();
 
     $('.dough button').click(function(event) {
       event.preventDefault();
       pizza1.dough += this.id;
       pizza1.doughPrice();
       $('.dough').hide();
+      $('.sauces').show();
+      $('button#veggies').show();
     });
-  });
-
-
-
-
-
-  $('button#sauces').click(function(event) {
-    event.preventDefault();
-    $('.sauces').show();
-    $('button#sauces').hide();
-    $('button#veggies').show();
-    $('button#meats').show();
-    $('button#cheese').show();
-    $('.veggies').hide();
-    $('.meats').hide();
-    $('.cheese').hide();
 
     $('.sauces button').click(function(event) {
       event.preventDefault();
@@ -81,83 +60,72 @@ $(function() {
       pizza1.saucesPrice();
       pizza1.sauces += this.id + ", ";
     });
-  });
 
-  $('button#veggies').click(function(event) {
-    event.preventDefault();
-    $('.veggies').show();
-    $('button#veggies').hide();
-    $('button#sauces').show();
-    $('button#meats').show();
-    $('button#cheese').show();
-    $('.sauces').hide();
-    $('.meats').hide();
-    $('.cheese').hide();
-
-    $('.veggies button').click(function(event) {
+    $('button#veggies').click(function(event) {
       event.preventDefault();
-      $(this).prop("disabled",true);
-      pizza1.veggies += this.id + ", ";
-      pizza1.veggiesPrice();
+      $('.veggies').show();
+      $('button#meats').show();
+      $('button#veggies').hide();
+      $('.sauces').hide();
+
+      $('.veggies button').click(function(event) {
+        event.preventDefault();
+        $(this).prop("disabled",true);
+        pizza1.veggies += this.id + ", ";
+        pizza1.veggiesPrice();
+      });
     });
-  });
 
 
-  $('button#meats').click(function(event) {
-    event.preventDefault();
-    $('.meats').show();
-    $('button#meats').hide();
-    $('button#sauces').show();
-    $('button#meats').show();
-    $('button#cheese').show();
-    $('.sauces').hide();
-    $('.veggies').hide();
-    $('.cheese').hide();
-
-    $('.meats button').click(function(event) {
+    $('button#meats').click(function(event) {
       event.preventDefault();
-      $(this).prop("disabled",true);
-      pizza1.meats += this.id + ", ";
-      pizza1.meatsPrice();
+      $('.meats').show();
+      $('button#cheese').show();
+      $('button#meats').hide();
+      $('.veggies').hide();
+
+      $('.meats button').click(function(event) {
+        event.preventDefault();
+        $(this).prop("disabled",true);
+        pizza1.meats += this.id + ", ";
+        pizza1.meatsPrice();
+      });
     });
-  });
 
-  $('button#cheese').click(function(event) {
-    event.preventDefault();
-    $('.cheese').show();
-    $('button#meats').hide();
-    $('button#sauces').show();
-    $('button#cheese').show();
-    $('button#meats').show();
-    $('.sauces').hide();
-    $('.veggies').hide();
-    $('.meats').hide();
-
-    $('.cheese button').click(function(event) {
+    $('button#cheese').click(function(event) {
       event.preventDefault();
-      $(this).prop("disabled",true);
-      pizza1.cheese += this.id + ", ";
-      pizza1.cheesePrice();
+      $('.cheese').show();
+      $('.size').show();
+      $('button#cheese').hide();
+      $('.meats').hide();
+
+      $('.cheese button').click(function(event) {
+        event.preventDefault();
+        $(this).prop("disabled",true);
+        pizza1.cheese += this.id + ", ";
+        pizza1.cheesePrice();
+      });
     });
-  });
 
-  $('.size button').click(function(event) {
-    event.preventDefault();
-    pizza1.size = this.id;
-    $(".size").hide();
-  });
+    $('.size button').click(function(event) {
+      event.preventDefault();
+      pizza1.size = this.id;
+      $(".size").hide();
+      $("#submit").show();
+    });
 
-  $('form').submit(function(event) {
-    event.preventDefault();
-    console.log("hi");
-    $("#output-dough").text(pizza1.dough);
-    $("#output-sauce").text(pizza1.sauce);
-    $("#output-veggies").text(pizza1.veggies);
-    $("#output-meat").text(pizza1.meat);
-    $("#output-cheese").text(pizza1.cheese);
-    $("#output-size").text(pizza1.size);
-    $("#output-cost").text(pizza1.cost);
-    $("#form").hide();
-    $('.output').show();
+    $('form').submit(function(event) {
+      event.preventDefault();
+      console.log("hi");
+      $("#output-dough").text(pizza1.dough);
+      $("#output-sauce").text(pizza1.sauces);
+      $("#output-veggies").text(pizza1.veggies);
+      $("#output-meat").text(pizza1.meats);
+      $("#output-cheese").text(pizza1.cheese);
+      $("#output-size").text(pizza1.size);
+      $("#output-cost").text(pizza1.cost);
+      $("#form").hide();
+      $('.output').show();
+    });
   });
 });

@@ -25,3 +25,16 @@
 .output {
   display: none;
 }
+
+form {
+  display: none;
+}
+#veggies, #meats, #cheese {
+  display: none;
+}
+.size {
+  display: none;
+}
+#submit {
+  display: none;
+}
