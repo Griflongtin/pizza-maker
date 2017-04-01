@@ -11,6 +11,13 @@ Has you make a pizza with different toppings
 * Then open the folder in your GUI
 * Open "index.html" on a browser and check it out
 
+## Specs
+* Able to order a pizza, “submit button”.
+* Able to choose a size of pizza “size button”.
+* Able to choose toping for the pizza “cheese, meat, eta,”
+* Able to choose many topping.
+* Shows would you ordered in categories.
+
 ## Support and contact details
 
 Let me know if you run into a bugs. You can contact me at "griflongitn@live.com".
