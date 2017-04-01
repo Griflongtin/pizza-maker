@@ -1,24 +1,23 @@
+body {
+  text-align: center;
+  background-color: #e0ffe0;
+  padding: 30px;
+}
+form {
+  display: none;
+}
+li {
+  list-style:none;
+}
+.container {
+  background: #00ffff;
+  padding: 30px;
+}
 .row, .col-md-3 {
   border: solid 1px black;
 }
 
-.dough {
-  display: none;
-}
-
-.sauces {
-  display: none;
-}
-
-.veggies {
-  display: none;
-}
-
-.meats {
-  display: none;
-}
-
-.cheese {
+.dough, .sauces, .veggies, .meats, .cheese  {
   display: none;
 }
 
@@ -26,13 +25,16 @@
   display: none;
 }
 
-form {
+.size {
   display: none;
+}
+
+#header {
+  border: solid 3px;
+  border-color: #ff756b;
+  background: #c8caca;
 }
 #veggies, #meats, #cheese {
-  display: none;
-}
-.size {
   display: none;
 }
 #submit {
